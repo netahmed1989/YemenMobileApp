@@ -8,7 +8,7 @@ import CoreTelephony
 import CallKit
 import UserNotifications
 
-class EmergencyCallAssistant: ObservableObject {
+class EmergencyCallAssistant: NSObject {
     @Published var isMonitoring: Bool = false
     @Published var emergencySequenceActive: Bool = false
     @Published var lastEmergencyCallTime: Date?
