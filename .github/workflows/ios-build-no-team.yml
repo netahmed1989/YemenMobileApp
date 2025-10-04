@@ -1,3 +1,4 @@
+```yaml
 name: Build iOS App (No Team ID)
 
 on:
@@ -33,3 +34,5 @@ jobs:
       with:
         name: YemenMobileApp-IPA-NoTeam
         path: YemenMobileApp/*.ipa
+```
+
