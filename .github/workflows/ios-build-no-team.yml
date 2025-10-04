@@ -2,7 +2,7 @@ name: Build iOS App (No Team ID)
 
 "on":
   push:
-    branches: [ main ]
+    branches: [ SimReader ]
   workflow_dispatch:
 
 jobs:
