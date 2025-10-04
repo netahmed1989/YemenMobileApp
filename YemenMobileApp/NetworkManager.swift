@@ -8,7 +8,7 @@ import CoreTelephony
 import Network
 import CallKit
 
-class NetworkManager: ObservableObject {
+class NetworkManager: NSObject {
     @Published var carrierName: String = "Unknown"
     @Published var networkType: String = "Unknown"
     @Published var signalStrength: String = "Unknown"
