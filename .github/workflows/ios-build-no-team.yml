@@ -1,6 +1,6 @@
 name: Build iOS App (No Team ID)
 
-on:
+"on":
   push:
     branches: [ main ]
   workflow_dispatch:
