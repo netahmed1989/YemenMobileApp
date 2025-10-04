@@ -8,7 +8,7 @@ import CoreTelephony
 import CallKit
 import UserNotifications
 
-class EmergencyCallAssistant: NSObject {
+class EmergencyCallAssistant: NSObject { // <-- Correction: inherit NSObject
     @Published var isMonitoring: Bool = false
     @Published var emergencySequenceActive: Bool = false
     @Published var lastEmergencyCallTime: Date?
@@ -19,7 +19,8 @@ class EmergencyCallAssistant: NSObject {
     private var registrationTimer: Timer?
     private var monitoringTimer: Timer?
     
-    init() {
+    override init() { // <-- Correction: override required for NSObject
+        super.init()
         setupCallObserver()
     }
     
